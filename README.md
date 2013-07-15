@@ -1,7 +1,9 @@
 sessionserver
 =============
-This is a lightweight server app for letting clients create and join sessions, and send messages between each other.
+This is a lightweight server app for letting clients create and join sessions, and let clients who are in the
+same session send messages between each other.
 Suitable applications are simple multiplayer games, chat applications, etc.
+The server uses Socket.IO for communication, i.e. communication goes through TCP.
 
 Short terminology:
 
