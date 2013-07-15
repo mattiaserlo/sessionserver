@@ -4,6 +4,7 @@ This is a lightweight server app for letting clients create and join sessions, a
 Suitable applications are simple multiplayer games, chat applications, etc.
 
 Short terminology:
+
 * A "client" is a representation of a client that has connected to the server.
 * Each client on the server will be assigned a unique client ID number.
 * A "session" is a group of clients wanting to communicate with each other.
@@ -13,7 +14,6 @@ Short terminology:
 * A "host client" is a client that has created a session.
 * When creating a session, a host client can choose to use a password, so that only clients stating the same
 password may join the session.
-* 
 
 A typical scenario looks like this:
 
