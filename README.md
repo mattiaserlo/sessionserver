@@ -24,7 +24,8 @@ A typical scenario looks like this:
 3. Client 0 sends a "createSession" message to the server, stating application name "Tetris".
 4. The server starts a session, assigns a unique session ID (0) to the session, and sends a "sessionCreated"
 reply to client 0.
-5. Client 1 sends a "sessionList" message to the server, stating application name "Tetris".
+5. Client 1 sends a "sessionList" request to the server, stating application name "Tetris", to find out if
+there are any available Tetris sessions on the server.
 6. The server responds to client 1 with a "sessionList" message containing the ongoing Tetris sessions.
 The list contains session ID 0 and its host client name.
 7. Client 1 sends a "joinSession" message to the server, with session ID 0 as parameter.
@@ -33,3 +34,5 @@ session. The server also sends a "clientJoinedSession" message to client 0 to le
 9. Now client 0 and 1 can send messages to each other using "messageToClient" or "messageToAllClients".
 They are aware of each other's IDs and use these IDs when they send messages to each other.
 All messages go via the server.
+
+To run sessionserver you must first install Node.js and Socket.IO
